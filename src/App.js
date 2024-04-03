@@ -1,22 +1,25 @@
 import "./App.css";
+import ColorCard from "./components/ColorCard/ColorCard";
+import { themes } from "./db";
 
 function App() {
+  const theme = themes[0];
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className="header">
+        <h1>Theme Creator</h1>
       </header>
-    </div>
+      <main className="main-container">
+        <h2 className="theme-title">{theme.name}</h2>
+        <ul className="color-list">
+          {theme.colors.map((color) => (
+            <li key={color.role}>
+              <ColorCard color={color} />
+            </li>
+          ))}
+        </ul>
+      </main>
+    </>
   );
 }
 
