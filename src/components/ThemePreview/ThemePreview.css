@@ -1,0 +1,11 @@
+.theme-preview {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.theme-preview-theme {
+  width: 100%;
+  aspect-ratio: 3/1;
+  border-radius: 8px;
+}

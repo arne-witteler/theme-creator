@@ -1,20 +1,18 @@
 import "./App.css";
-import ColorCard from "./components/ColorCard/ColorCard";
+import Theme from "./components/Theme/Theme";
 import { themes } from "./db";
 
 function App() {
-  const theme = themes[0];
   return (
     <>
       <header className="header">
         <h1>Theme Creator</h1>
       </header>
       <main className="main-container">
-        <h2 className="theme-title">{theme.name}</h2>
-        <ul className="color-list">
-          {theme.colors.map((color) => (
-            <li key={color.role}>
-              <ColorCard color={color} />
+        <ul className="theme-list">
+          {themes.map((theme) => (
+            <li key={theme.id}>
+              <Theme name={theme.name} colors={theme.colors} />
             </li>
           ))}
         </ul>

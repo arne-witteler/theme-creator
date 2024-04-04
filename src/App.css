@@ -14,7 +14,7 @@
   font-size: 2rem;
 }
 
-.color-list {
+.theme-list {
   display: grid;
-  gap: 0.5rem;
+  gap: 20px;
 }

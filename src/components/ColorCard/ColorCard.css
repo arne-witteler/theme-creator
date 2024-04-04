@@ -3,7 +3,7 @@
   grid-template-columns: 175px 1fr;
   min-height: 200px;
   grid-template-areas: "info color";
-  background-color: #d7d7e5;
+  background-color: #e5e5ed;
   color: #222229;
   overflow: hidden;
   border-radius: 8px;
