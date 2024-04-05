@@ -45,8 +45,8 @@ export default function ThemeForm({ onSubmit }) {
   }
 
   return (
-    <form className="theme-form" onSubmit={handleSubmit}>
-      <h2 className="theme-form__title">Add a theme</h2>
+    <form onSubmit={handleSubmit}>
+      <h2>Add a theme</h2>
       <input
         aria-label="theme title"
         className="theme-form__name-input"
