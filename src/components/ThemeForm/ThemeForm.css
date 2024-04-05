@@ -1,0 +1,37 @@
+.theme-form__name-input {
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  border: 1px solid #d7d7e5;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.theme-form__color-inputs {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  border: none;
+  padding: 0;
+}
+
+.theme-form__color-input {
+  all: unset;
+  box-sizing: border-box;
+  background-clip: margin-box;
+  border: 1px solid;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  aspect-ratio: 3 / 1;
+}
+
+.theme-form__submit-button {
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #d7d7e5;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
